@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Results</title>
+  
+    
+</head>
+<body>
+    <h1>Patient Results</h1>
+    <p>Accuracy: {{ accuracy }}%</p>
+    <p>Result: 2</p>
+    
+    <br/>
+    <a href="{{ url_for('patient_history') }}">View History</a>
+    <b><h2>reference</h2></b>
+    <ul>
+        <li>0: Normal - No need to worry</li>
+        <li>1: Abnormal - Visit the doctor</li>
+        <li>2: MI(Heart attack) - Immediate medical attention required</li>
+        <li>3: History of MI - Regular checkups recommended</li>
+    </ul>
+</body>
+</html>
